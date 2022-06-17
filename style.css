@@ -1,0 +1,630 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* PERSONAL STYLING */
+
+* {
+    text-decoration: none;
+}
+
+.allButFooter {
+    min-height: calc(100vh - 400px);
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    height: 100px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto;
+    background-color: white;
+    grid-template-areas: "top top" "left right";
+}
+
+header .header-name-div {
+    grid-area: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-name {
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 900;
+    color: #111;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;   
+    margin-left: 16px;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0 16px;
+    text-align: center;
+}
+
+header nav ul li a {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #707070;
+}
+
+.header-login-register {
+    margin-left: 16px;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    gap: 32px;
+}
+
+.login-register-buttons {
+    outline: 1px solid #111;
+    line-height: 32px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    padding: 0 16px;
+    
+}
+
+.login-register-buttons:hover {
+    color: #707070;
+    background-color: #f4f4f4;
+    outline: 2px solid #111;
+    outline-offset: -2px;
+}
+
+.display-username {
+    float: right;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #111;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    header {
+        grid-template-rows: 1fr;
+        grid-template-columns: auto auto 1fr;
+        grid-template-areas: "left middle right";
+    }
+
+    header .header-name-div {
+        grid-area: left;
+        align-items: center;
+    }
+
+    header .header-name {
+        line-height: 38px;
+        padding: 0 20px 0 40px;
+        border-right: 3px solid #111;
+    }
+
+    nav {
+        grid-area: middle;
+        justify-content: left;
+    }
+
+    .header-login-register {
+        grid-area: right;
+        justify-content: right;
+        margin-right: 40px;
+    }
+}
+
+/*INDEX*/
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/UBCBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.login-register-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url('img/UBCBanner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: Catamaran;
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 46px;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+
+.login-register-banner h2 {
+    font-family: Catamaran;
+    color: white;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 46px;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+
+.index-banner h1 {
+    font-family: Cormorant Garamond;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 36px;
+    text-shadow: 2px 2px 8px #111;
+    text-align: center;
+}
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100% - 32px);
+    height: 100px;
+    background: #F2F2F2F2;
+}
+
+.index-links div h3 {
+    font-family: Roboto;
+    color: #111;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.index-links div h3:hover {
+    color: #707070;
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .index-banner {
+        height: 450px;
+    }
+
+    .login-register-banner {
+        height: 200px;
+    }
+
+    .index-banner h1 {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .index-links div h3 {
+        line-height: 200px;
+    }
+
+    .index-links div {
+        margin: 20px 10px 0;
+        height: 200px;
+        float: left;
+    }
+
+    .index-links {
+        overflow: hidden;
+    }
+
+    .index-boxllink-square {
+        width: calc(33% - 20px) !important;
+    }
+
+    .index-boxllink-rectangle {
+        width: calc(67% - 20px) !important;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 20px;
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 16px;
+}
+
+footer ul li {
+    display: block;
+    list-style: none;
+}
+
+footer ul li a {
+    font-family: Roboto;
+    font-size: 24px;
+    color: white;
+    line-height: 40px;
+}
+
+footer ul li a:hover{
+    color: #707070;
+}
+
+.footer-links-projects {
+    display: none;
+}
+
+.badge-div {
+    display: flex;
+    justify-content: right;
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer-links-projects {
+        display: block;
+    }
+
+    footer ul li p {
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: bolder;
+        color: white;
+        line-height: 40px;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 8px;
+    }
+
+    footer ul {
+        padding-right: 30px;
+    }
+}
+
+/*REGISTER/LOGIN FORM*/
+
+.register-form-div {
+    padding: 8px 0;
+    margin: 20px 10px 0 10px;
+    text-align: center;
+    background-color: #F2F2F2F2;
+}
+
+.register-form-div input {
+    width: 50%;
+}
+
+.register-form-div input[type=text] {
+    text-align: left;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.register-form-div input[type=password] {
+    text-align: left;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.register-form-div .form-submit {
+    margin: auto;
+    width: 50%;
+}
+
+.button-submit {
+    width: 100%;
+    font-family: Roboto;
+    border: none;
+    background-color: #414141;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    }
+
+.button-submit:hover {
+    background-color: #292929;
+    }
+
+.register-form-div p {
+    color: red;
+    font-family: Roboto;
+}
+
+/* ABOUT ME */
+
+.about-me-container {
+    background-color: #F2F2F2F2;
+    margin: 20px 10px 0 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.about-me-container .abt-img {
+    display: grid;
+    justify-content: center;
+}
+
+.abt-img img {
+    width: 300px;
+}
+
+.about-me-container section {
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.about-me-container section h1 {
+    font-family: Catamaran;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.about-me-container section h2 {
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.border-bar {   
+    height: 3px;
+    width: 80px;
+    margin: 10px 0;
+    background-color: black;
+}
+
+.about-me-container p {
+    font-family: Roboto;
+    line-height: 22px;
+    word-spacing: 1px;
+    text-indent: 30px;
+    color: #4d4d4d;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .about-me-container {
+        display: block;
+        overflow: hidden;
+    }
+
+    .about-me-container section {
+        margin-top: 0;
+    }
+
+    .about-me-container .abt-img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .abt-img img {
+        width: 400px;
+    }
+
+    .about-me-container section {
+        text-align: left;
+    }
+
+    .about-me-container section {
+        justify-items: left;
+    }
+    
+    .about-me-container section h1 {
+        text-align: left;
+    }
+    
+    .about-me-container section h2 {
+        text-align: left;
+    }
+}
+
+/* CONTACT */
+
+.contact-container {
+    background-color: #F2F2F2F2;
+    margin: 20px 10px 0 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-container input {
+    width: 50%;
+}
+
+.contact-container input[type=text] {
+    text-align: left;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.contact-container textarea {
+    text-align: left;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    width: 50%;
+    height: 200px;
+}
+
+.contact-container .form-submit {
+    margin: auto;
+    width: 50%;
+}
+
+.contact-button-submit {
+    width: 50%;
+    font-family: Roboto;
+    border: none;
+    background-color: #414141;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    }
+
+.contact-button-submit:hover {
+    background-color: #292929;
+    }
+
+.contact-container p {
+    color: red;
+    font-family: Roboto;
+}
+
+
+
+
+
+
+
+
+
