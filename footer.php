@@ -2,9 +2,9 @@
             <footer>
                 <ul class="footer-links-main">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="projects.php">Projects</a></li>
+                    <li><a href="about-me.php">About Me</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                     <li><a href="https://github.com/MerlinReinders" target="blank">GitHub</a></li>
                 </ul>
                 <ul class="footer-links-projects">

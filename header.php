@@ -22,7 +22,7 @@ session_start();
             </div>
             <nav>
                 <ul>
-                   <li><a href="#">Projects</a></li>
+                   <li><a href="projects.php">Projects</a></li>
                    <li><a href="about-me.php">About Me</a></li>
                    <li><a href="contact.php">Contact</a></li>
                 </ul>

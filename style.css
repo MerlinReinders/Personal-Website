@@ -620,6 +620,97 @@ footer ul li a:hover{
     font-family: Roboto;
 }
 
+/* PROJECTS */
+
+.projects-section {
+    background-color: #F2F2F2F2;
+    margin: 20px 10px 0 10px;
+    padding: 20px;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.featured h1 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.featured .border-bar {
+        height: 3px;
+        width: 60px;
+        margin-right: 20px;
+        background-color: black;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.projects-container .personal-website {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+   
+}
+
+.personal-website .video {
+    width: 50%;
+}
+
+.personal-website .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.personal-website .text h3 {
+    font-family: ROBOTO;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+.personal-website .text h1 {
+    font-family: Catamaran;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 26px;
+    color: #292929;
+}
+
+.personal-website .text p {
+    font-family: ROBOTO;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: #292929;
+    line-height: 1.2;
+}
+
+.personal-website .text a:link {
+    color: #292929;
+}
+
+.personal-website .text a:visited {
+    color: #292929;
+}
+
+.personal-website .text a:hover {
+    text-decoration: underline;
+}
 
 
 
